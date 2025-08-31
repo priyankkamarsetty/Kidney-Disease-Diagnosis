@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future Scope - Chronic Kidney Disease Diagnosis System</title>
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <style>
+        .future-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 80px 0;
+        }
+        .roadmap-item {
+            border-left: 4px solid #667eea;
+            padding: 20px;
+            margin: 20px 0;
+            background: white;
+            border-radius: 0 10px 10px 0;
+            position: relative;
+        }
+        .roadmap-item::before {
+            content: '';
+            position: absolute;
+            left: -12px;
+            top: 20px;
+            width: 20px;
+            height: 20px;
+            background: #667eea;
+            border-radius: 50%;
+        }
+        .feature-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin: 20px 0;
+            transition: transform 0.3s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="{{ url_for('first') }}">🏥 Kidney Disease Diagnosis</a>
+            <div class="navbar-nav ml-auto">
+                <a class="nav-link" href="{{ url_for('first') }}">Home</a>
+                <a class="nav-link" href="{{ url_for('home') }}">Diagnosis</a>
+                <a class="nav-link" href="{{ url_for('chart') }}">Analysis</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="future-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="display-4 mb-4">Future Scope & Enhancements</h1>
+                    <p class="lead">Exploring the next generation of AI-powered medical diagnosis systems</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Technology Roadmap</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="roadmap-item">
+                        <h4>Phase 1: Enhanced ML Models (2024-2025)</h4>
+                        <ul>
+                            <li>Integration of Deep Learning algorithms</li>
+                            <li>Real-time model retraining capabilities</li>
+                            <li>Multi-disease prediction support</li>
+                            <li>Enhanced accuracy through ensemble methods</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="roadmap-item">
+                        <h4>Phase 2: Advanced Analytics (2025-2026)</h4>
+                        <ul>
+                            <li>Predictive analytics for disease progression</li>
+                            <li>Risk assessment algorithms</li>
+                            <li>Personalized treatment recommendations</li>
+                            <li>Integration with electronic health records (EHR)</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="roadmap-item">
+                        <h4>Phase 3: AI-Powered Insights (2026-2027)</h4>
+                        <ul>
+                            <li>Natural Language Processing for medical reports</li>
+                            <li>Automated medical image analysis</li>
+                            <li>Voice-enabled diagnosis interface</li>
+                            <li>Mobile application development</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="roadmap-item">
+                        <h4>Phase 4: Comprehensive Healthcare Platform (2027+)</h4>
+                        <ul>
+                            <li>Multi-specialty disease detection</li>
+                            <li>Telemedicine integration</li>
+                            <li>Global healthcare network</li>
+                            <li>Research collaboration platform</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Advanced Features in Development</h2>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="feature-card text-center">
+                        <div class="mb-3">
+                            <h1>🔬</h1>
+                        </div>
+                        <h4>Genomic Analysis</h4>
+                        <p>Integration of genetic markers and family history for personalized risk assessment</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="feature-card text-center">
+                        <div class="mb-3">
+                            <h1>📱</h1>
+                        </div>
+                        <h4>Mobile Applications</h4>
+                        <p>Cross-platform mobile apps for healthcare professionals and patients</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="feature-card text-center">
+                        <div class="mb-3">
+                            <h1>🌐</h1>
+                        </div>
+                        <h4>Cloud Integration</h4>
+                        <p>Scalable cloud infrastructure for global accessibility and data security</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-4">
+                <div class="col-lg-4">
+                    <div class="feature-card text-center">
+                        <div class="mb-3">
+                            <h1>🤖</h1>
+                        </div>
+                        <h4>AI Chatbot</h4>
+                        <p>Intelligent virtual assistant for patient queries and preliminary screening</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="feature-card text-center">
+                        <div class="mb-3">
+                            <h1>📊</h1>
+                        </div>
+                        <h4>Advanced Analytics</h4>
+                        <p>Machine learning-powered insights for treatment optimization</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="feature-card text-center">
+                        <div class="mb-3">
+                            <h1>🔒</h1>
+                        </div>
+                        <h4>Blockchain Security</h4>
+                        <p>Decentralized data management for enhanced privacy and security</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Research & Development Areas</h2>
+            <div class="row">
+                <div class="col-lg-6">
+                    <h4>🔬 Medical Research</h4>
+                    <ul>
+                        <li>Clinical trial data integration</li>
+                        <li>Drug interaction analysis</li>
+                        <li>Treatment outcome prediction</li>
+                        <li>Epidemiological studies</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <h4>💻 Technical Innovation</h4>
+                    <ul>
+                        <li>Edge computing for real-time processing</li>
+                        <li>Federated learning for privacy preservation</li>
+                        <li>Quantum computing integration</li>
+                        <li>Advanced neural network architectures</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Global Impact & Collaboration</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <p class="lead mb-4">Our vision extends beyond individual diagnosis to creating a comprehensive healthcare ecosystem that benefits patients worldwide.</p>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h5>🌍 Global Reach</h5>
+                            <p>Accessible to healthcare professionals worldwide</p>
+                        </div>
+                        <div class="col-md-4">
+                            <h5>🤝 Collaboration</h5>
+                            <p>Partnerships with medical institutions and research centers</p>
+                        </div>
+                        <div class="col-md-4">
+                            <h5>📚 Education</h5>
+                            <p>Training programs for healthcare professionals</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2>Join Us in Shaping the Future</h2>
+                    <p class="lead mb-4">Be part of the revolution in AI-powered medical diagnosis</p>
+                    <a href="{{ url_for('home') }}" class="btn btn-primary btn-lg mr-3">Try Current System</a>
+                    <a href="{{ url_for('first') }}" class="btn btn-outline-secondary btn-lg">Back to Home</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <p>&copy; 2024 Chronic Kidney Disease Diagnosis System. For educational purposes only.</p>
+        <p class="small">Building the future of healthcare, one diagnosis at a time.</p>
+    </footer>
+
+    <script src="../static/js/bootstrap.min.js"></script>
+</body>
+</html>

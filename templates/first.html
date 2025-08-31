@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chronic Kidney Disease Diagnosis System</title>
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <style>
+        .hero-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        .feature-card {
+            padding: 30px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        .btn-custom {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            border: none;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 25px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        .btn-custom:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">🏥 Kidney Disease Diagnosis</a>
+            <div class="navbar-nav ml-auto">
+                <a class="nav-link" href="{{ url_for('index') }}">Login</a>
+                <a class="nav-link" href="{{ url_for('abstract') }}">About</a>
+                <a class="nav-link" href="{{ url_for('home') }}">Diagnosis</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section">
+        <div class="container">
+            <h1 class="display-4 mb-4">Chronic Kidney Disease Diagnosis System</h1>
+            <p class="lead mb-4">Advanced AI-powered system for early detection and diagnosis of kidney disease</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <a href="{{ url_for('home') }}" class="btn btn-custom btn-lg mr-3">Start Diagnosis</a>
+                </div>
+                <div class="col-md-6">
+                    <a href="{{ url_for('abstract') }}" class="btn btn-outline-light btn-lg">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Key Features</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="feature-card bg-light">
+                        <h4>🤖 AI-Powered Diagnosis</h4>
+                        <p>Advanced machine learning algorithms analyze patient data for accurate predictions</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card bg-light">
+                        <h4>⚡ Real-time Results</h4>
+                        <p>Instant diagnosis results based on comprehensive medical parameters</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card bg-light">
+                        <h4>📊 Data Analysis</h4>
+                        <p>Comprehensive charts and visualizations for better understanding</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">How It Works</h2>
+            <div class="row">
+                <div class="col-md-3 text-center">
+                    <div class="mb-3">
+                        <h1>1</h1>
+                    </div>
+                    <h5>Input Data</h5>
+                    <p>Enter patient medical parameters</p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="mb-3">
+                        <h1>2</h1>
+                    </div>
+                    <h5>AI Analysis</h5>
+                    <p>ML model processes the data</p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="mb-3">
+                        <h1>3</h1>
+                    </div>
+                    <h5>Generate Results</h5>
+                    <p>Get instant diagnosis</p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="mb-3">
+                        <h1>4</h1>
+                    </div>
+                    <h5>View Analysis</h5>
+                    <p>Detailed insights and charts</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <p>&copy; 2024 Chronic Kidney Disease Diagnosis System. For educational purposes only.</p>
+    </footer>
+
+    <script src="../static/js/bootstrap.min.js"></script>
+</body>
+</html>

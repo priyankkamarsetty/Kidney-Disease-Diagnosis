@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Chronic Kidney Disease Diagnosis System</title>
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <style>
+        .about-section {
+            padding: 80px 0;
+            background: #f8f9fa;
+        }
+        .feature-icon {
+            font-size: 3rem;
+            color: #667eea;
+            margin-bottom: 20px;
+        }
+        .timeline {
+            position: relative;
+            padding: 20px 0;
+        }
+        .timeline-item {
+            padding: 20px;
+            border-left: 3px solid #667eea;
+            margin-bottom: 20px;
+            background: white;
+            border-radius: 0 10px 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="{{ url_for('first') }}">🏥 Kidney Disease Diagnosis</a>
+            <div class="navbar-nav ml-auto">
+                <a class="nav-link" href="{{ url_for('first') }}">Home</a>
+                <a class="nav-link" href="{{ url_for('home') }}">Diagnosis</a>
+                <a class="nav-link" href="{{ url_for('chart') }}">Analysis</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="display-4 mb-4">About the Project</h1>
+                    <p class="lead mb-5">A comprehensive machine learning system for early detection of chronic kidney disease</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2>Project Overview</h2>
+                    <p class="lead">This system represents a significant advancement in medical technology, combining artificial intelligence with medical expertise to provide early detection of chronic kidney disease.</p>
+                    <p>Chronic kidney disease (CKD) is a progressive condition that affects millions of people worldwide. Early detection is crucial for effective treatment and management. Our system uses advanced machine learning algorithms to analyze various medical parameters and provide accurate predictions.</p>
+                </div>
+                <div class="col-lg-6">
+                    <h2>Key Objectives</h2>
+                    <ul class="list-unstyled">
+                        <li class="mb-3">✅ Early detection of kidney disease</li>
+                        <li class="mb-3">✅ Non-invasive diagnostic approach</li>
+                        <li class="mb-3">✅ Rapid and accurate results</li>
+                        <li class="mb-3">✅ User-friendly interface for healthcare professionals</li>
+                        <li class="mb-3">✅ Comprehensive data analysis and visualization</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Technical Features</h2>
+            <div class="row">
+                <div class="col-md-4 text-center mb-4">
+                    <div class="feature-icon">🤖</div>
+                    <h4>Machine Learning</h4>
+                    <p>Advanced algorithms trained on extensive medical datasets for accurate predictions</p>
+                </div>
+                <div class="col-md-4 text-center mb-4">
+                    <div class="feature-icon">📊</div>
+                    <h4>Data Analysis</h4>
+                    <p>Comprehensive analysis of 25+ medical parameters for thorough evaluation</p>
+                </div>
+                <div class="col-md-4 text-center mb-4">
+                    <div class="feature-icon">🌐</div>
+                    <h4>Web Application</h4>
+                    <p>Modern, responsive web interface accessible from any device</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Medical Parameters Analyzed</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Demographic & Vital Signs</h5>
+                    <ul>
+                        <li>Age</li>
+                        <li>Blood Pressure (BP)</li>
+                        <li>Specific Gravity</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h5>Laboratory Values</h5>
+                    <ul>
+                        <li>Albumin, Sugar</li>
+                        <li>Blood Glucose, Blood Urea</li>
+                        <li>Serum Creatinine</li>
+                        <li>Sodium, Potassium</li>
+                        <li>Hemoglobin, WBC Count</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <h5>Medical Conditions</h5>
+                    <ul>
+                        <li>Hypertension</li>
+                        <li>Diabetes</li>
+                        <li>Coronary Artery Disease</li>
+                        <li>Appetite, Pedal Edema</li>
+                        <li>Anemia</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h5>Additional Parameters</h5>
+                    <ul>
+                        <li>Packed Cell Volume</li>
+                        <li>Various clinical indicators</li>
+                        <li>Patient symptoms</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">How It Works</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h5>1. Data Input</h5>
+                    <p>Healthcare professionals input patient medical parameters through an intuitive web interface</p>
+                </div>
+                <div class="timeline-item">
+                    <h5>2. Data Processing</h5>
+                    <p>The system processes and validates the input data, ensuring all required parameters are present</p>
+                </div>
+                <div class="timeline-item">
+                    <h5>3. ML Analysis</h5>
+                    <p>Our trained machine learning model analyzes the data using sophisticated algorithms</p>
+                </div>
+                <div class="timeline-item">
+                    <h5>4. Result Generation</h5>
+                    <p>The system generates a prediction indicating whether the patient has chronic kidney disease</p>
+                </div>
+                <div class="timeline-item">
+                    <h5>5. Analysis & Visualization</h5>
+                    <p>Comprehensive charts and analysis tools provide deeper insights into the results</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2>Ready to Get Started?</h2>
+                    <p class="lead mb-4">Begin using our advanced kidney disease diagnosis system today</p>
+                    <a href="{{ url_for('home') }}" class="btn btn-primary btn-lg mr-3">Start Diagnosis</a>
+                    <a href="{{ url_for('first') }}" class="btn btn-outline-secondary btn-lg">Back to Home</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <p>&copy; 2024 Chronic Kidney Disease Diagnosis System. For educational and research purposes only.</p>
+        <p class="small">This system is designed to assist healthcare professionals and should not replace professional medical advice.</p>
+    </footer>
+
+    <script src="../static/js/bootstrap.min.js"></script>
+</body>
+</html>
