@@ -138,13 +138,6 @@ The system provides:
 
 This project is for educational and research purposes.
 
-## 👥 Team
-
-**VTPML12 Team** - Machine Learning Project
-
-## 📞 Support
-
-For questions or issues, please contact the development team.
 
 ---
 
